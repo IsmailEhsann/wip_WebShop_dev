@@ -1,0 +1,68 @@
+/* Should attempt to write multiple drafts of this HTML/CSS of my Online Shop w/ different quirks and tricks and learn new things */
+
+@font-face{
+    font-family: myFont;
+    src: url(CutiveMono-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: myFont;
+    
+}
+
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background: white;
+    color: black;
+    font-size: 15px;
+}
+
+#nav {
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px 0;
+}
+
+#nav li {
+    display: inline;
+}
+
+#nav a {
+    text-decoration: none;
+    padding: 0 40px;
+    color: black;
+    transition: font-weight 0.3s ease;
+}
+
+#nav a:hover {
+    font-weight: 900;
+}
+
+.home {
+    top: 250px;
+    width: 100%;
+    position: absolute;
+    transform: translateY(-50%);
+    text-align: center;
+    color: black;
+    border: 1px solid black;
+}
+
+.home h1 {
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+
+.home h4 {
+    padding-bottom: 20px;
+}
+
+.home p {
+    padding-bottom: 20px;
+}
+
+/* Can use media queries to change font/sizing for different devices - can I change the way it looks manually? */
