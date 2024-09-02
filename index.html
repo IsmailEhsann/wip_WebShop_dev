@@ -1,9 +1,4 @@
 <!-- Should attempt to write multiple drafts of this HTML/CSS of my Online Shop w/ different quirks and tricks and learn new things -->
-
-<!-- Review Codecademy HTML/CSS again, however they are just for beginners -->
-
-<!-- Should learn it again from Youtube and maybe even Udemy -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,23 +9,62 @@
 </head>
 <body>
    
-<!-- Could have just added <header></header> instead of using div class "header"? -->
-   
-    <div class="header">
-       <h1>Club Black</h1>
-       <img class="logo">
-    </div>
-    <div class="navbar">
-        <ul id="nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Account</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Returns</a></li>
-        </ul>
-    </div>
-    <div class="home" align="center">
-        <h1>Pre-order Now!</h1>
+    <header>
+        <div class="logo">
+            <a href="#">Club Black</a>
+        </div>
+        
+        <nav class="navbar">
+        <!-- Hamburger Menu: Three Line Tab-->
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Account</a>
+            <a href="#">About</a>
+            <a href="#">Returns</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="homepage">
+            <img src="-" class="homepage-img" alt="Main Display">
+    
+            <div class="season-drop">
+                <h2>Fall/Autumn 24'</h2>
+                <button type="button" class="shop-button">Shop Now</button>
+                <button type="button" class="discover-button">Discover More</button>
+            </div>
+        </section>
+    
+        <section class="gallery-top">
+        <!-- Use this as the gallery section -->
+            <div class="topitems">
+                <img src="-" alt="" class="item1">
+                <img src="-" alt="" class="item2">
+            </div>
+        </section>
+    
+    
+    
+        <section class="gallery-bottom">
+        <!-- Use this as the gallery section -->
+            <div class="nextitems">
+                <img src="-" alt="" class="item3">
+                <img src="-" alt="" class="item4">
+                <img src="-" alt="" class="item5">
+                <img src="-" alt="" class="item6">
+            </div>
+        </section>
+    </main>
+    
+
+
+
+
+
+
+
+    <div class="preorder" align="center">
+        <h1>Pre-order now!</h1>
         <h4>16/11/24, 12pm BST</h4>
         <p>Members to get early access on all drops, where products sell out before general release.</p>
         <input type="email" id="femail" placeholder="Email Address">
@@ -38,5 +72,53 @@
         <input type="submit" value="Submit">
     </div>
     
+    <footer>
+    <!-- Have the Membership and Newsletter as 2 columns on top of footer -->
+        <div class="footercontainer">
+            <div class="column-main">
+                <div class="membership">
+                    <h4>Join Membership</h4>
+                    <button class="membership-signup">Sign up</button>
+                </div>
+                <div class="newsletter">
+                    <h4>Subscribe to our newsletter for the latest news!</h4>
+                    <form action="/subscribe" method="POST">
+                        <input type="email" name="email" placeholder="Email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="social">
+                    <h5>Social</h5>
+                    <a href="#" alt="Instagram" class="service">Instagram</a>
+                    <a href="#" alt="Tiktok" class="service">Tiktok</a>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="contact">
+                    <h5>Contact Us:</h5>
+                    <p class="service">07477805828</p>
+                    <p class="service">support@clubblack.com</p>
+                    <p class="service">123 Oxford St, London, UK</p>
+                    <p class="service">Support Hours: Mon-Fri, 9-5</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="customer-service">
+                    <h5>Customer Service</h5>
+                    <a href="/faq" class="service">FAQ</a>
+                    <a href="/shipping" class="service">Shipping Information</a>
+                    <a href="/returns" class="service">Returns & Exchanges</a>
+                    <a href="/track-order" class="service">Track Your Order</a>
+                    <a href="/size-guide" class="service">Size Guide</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
